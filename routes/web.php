@@ -15,4 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('users/{id}', 'UserController@show');
+Route::get('/admin', function () {
+    return view('admin/modules/dashboard');
+});
+
