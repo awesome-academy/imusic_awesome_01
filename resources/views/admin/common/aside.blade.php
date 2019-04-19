@@ -28,6 +28,7 @@
             </li>
             <li><a href="{{ route('admin.singers.index') }}"><i class="fa fa-book"></i> <span>Singer</span></a></li>
             <li><a href="{{ route('admin.authors.index') }}"><i class="fa fa-book"></i> <span>Author</span></a></li>
+            <li><a href="{{ route('admin.categories.index') }}"><i class="fa fa-book"></i> <span>Category</span></a></li>
         </ul>
     </section>
     <!-- /.sidebar -->
