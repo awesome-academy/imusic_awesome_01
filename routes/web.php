@@ -15,7 +15,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/admin', function () {
-    return view('admin/modules/dashboard');
-});
+Route::group([
+    'middleware' => [], 
+    'prefix' => 'admin', 
+    'namespace' => 'Admin',
+    'as' => 'admin.'
+    ], function () {
+        Route::get('/', function () {
+            return view('admin/modules/dashboard');
+        });
 
+        Route::resource('singers', 'SingerController');
+});

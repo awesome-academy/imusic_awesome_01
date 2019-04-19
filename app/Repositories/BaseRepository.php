@@ -45,6 +45,14 @@ class BaseRepository implements RepositoryInterface
     /**
      * @inheritdoc
      */
+    public function findOrFail($id)
+    {
+        return $this->model->findOrFail($id);
+    }
+
+    /**
+     * @inheritdoc
+     */
     public function findOne(array $conditions)
     {
         return $this->model->where($conditions)->first();
@@ -88,5 +96,13 @@ class BaseRepository implements RepositoryInterface
     public function delete(Model $model)
     {
         return $model->delete();
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function paginate(int $number_page)
+    {
+        return $this->model->paginate($number_page);
     }
 }

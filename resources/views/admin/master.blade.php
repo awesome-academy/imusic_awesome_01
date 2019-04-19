@@ -24,6 +24,7 @@
         @include('admin.common.aside_control')
         <div class="control-sidebar-bg"></div>
     </div>
+    <script src="{{ asset('js/sites/all.js') }}"></script>
     <script src="{{ mix('/common/js/admin/admin.js') }}"></script>
     @yield('script')
 </body>
