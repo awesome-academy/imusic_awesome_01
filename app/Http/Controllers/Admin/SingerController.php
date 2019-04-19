@@ -20,7 +20,7 @@ class SingerController extends Controller
     public function index(Request $request)
     {
         if($request->ajax()){
-            $singers = $this->singerRepository->paginate(config('custom.singer_number_of_page'));
+            $singers = $this->singerRepository->paginate(config('custom.paginate'));
 
             $response = [
                 'pagination' => [
