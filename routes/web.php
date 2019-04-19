@@ -26,4 +26,5 @@ Route::group([
         });
 
         Route::resource('singers', 'SingerController');
+        Route::resource('authors', 'AuthorController');
 });

@@ -4,7 +4,7 @@
         <!-- Sidebar user panel -->
         <div class="user-panel">
             <div class="pull-left image">
-                <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="{{ asset('dist/img/user2-160x160.jpg') }}" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
                 <p>Administrator</p>
@@ -23,10 +23,11 @@
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="../../index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+                    <li><a href="#"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
                 </ul>
             </li>
             <li><a href="{{ route('admin.singers.index') }}"><i class="fa fa-book"></i> <span>Singer</span></a></li>
+            <li><a href="{{ route('admin.authors.index') }}"><i class="fa fa-book"></i> <span>Author</span></a></li>
         </ul>
     </section>
     <!-- /.sidebar -->
