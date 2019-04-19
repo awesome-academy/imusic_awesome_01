@@ -77,4 +77,15 @@ interface RepositoryInterface
      * @throws Exception
      */
     public function delete(Model $model);
+
+    /**
+     * Delete the record from the database.
+     *
+     * @param Model $model
+     *
+     * @return bool
+     *
+     * @throws Exception
+     */
+    public function paginate(int $number_page);
 }

@@ -26,6 +26,7 @@
                     <li><a href="../../index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
                 </ul>
             </li>
+            <li><a href="{{ route('admin.singers.index') }}"><i class="fa fa-book"></i> <span>Singer</span></a></li>
         </ul>
     </section>
     <!-- /.sidebar -->
